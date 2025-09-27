@@ -1,9 +1,19 @@
+- vsCode supports git integration:
+  - Staging area => changes here will go in the next version;
+  - Working area => changes here will not gi inte the next version;
+
 commit history = version history;
 Usefult git commands:
 - git init => initialize an empty repository in the current folder;
 - git status => it tells us what changes have been made since the previous version;
 - git add => allow us to pick which changes we want in our next version (files or folders (it'll include all the files inside the folder)); [. --> add everything that is contained in the current folder];
-- git commit -m  => allow us to create a new version; 
+- git commit  => allow us to create a new version; 
+  Flags:
+    -m -> message attached to the commit;
+    --amend -> attach the changes to the previous version (commit); So you DON'T create a new version;
+
 - git config --global user.name "Nuovo Nome" --> configure/view/override name;
 - git config --global user.email "nuovo.email@example.com" configure/view/override email;
 - git log  => Show us the version history + ho committed each version listed there; 
+- git reset => Unstages the changes; works like add semantically speaking;
+- git checkout -- [file(s)] => reset changes of file(s) (they must be in the Working area);
