@@ -1,0 +1,9 @@
+commit history = version history;
+Usefult git commands:
+- git init => initialize an empty repository in the current folder;
+- git status => it tells us what changes have been made since the previous version;
+- git add => allow us to pick which changes we want in our next version (files or folders (it'll include all the files inside the folder)); [. --> add everything that is contained in the current folder];
+- git commit -m  => allow us to create a new version; 
+- git config --global user.name "Nuovo Nome" --> configure/view/override name;
+- git config --global user.email "nuovo.email@example.com" configure/view/override email;
+- git log  => Show us the version history + ho committed each version listed there; 
